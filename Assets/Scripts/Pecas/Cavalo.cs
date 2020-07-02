@@ -1,32 +1,19 @@
-﻿public class Cavalo : PecaXadrez {
-    public override bool[,] Movimentos() {
-        var r = new bool[8, 8];
+﻿using System.Collections.Generic;
 
-        // Up left
-        PermiteMover(GetX() - 1, GetZ() + 2, ref r);
+public class Cavalo : Peca {
+    protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
+        var x = GetX();
+        var z = GetZ();
 
-        // Up right
-        PermiteMover(GetX() + 1, GetZ() + 2, ref r);
-
-        // Down left
-        PermiteMover(GetX() - 1, GetZ() - 2, ref r);
-
-        // Down right
-        PermiteMover(GetX() + 1, GetZ() - 2, ref r);
-
-
-        // Left Down
-        PermiteMover(GetX() - 2, GetZ() - 1, ref r);
-
-        // Right Down
-        PermiteMover(GetX() + 2, GetZ() - 1, ref r);
-
-        // Left Up
-        PermiteMover(GetX() - 2, GetZ() + 1, ref r);
-
-        // Right Up
-        PermiteMover(GetX() + 2, GetZ() + 1, ref r);
-
-        return r;
+        return new List<Movimento> {
+            new Movimento(x - 1, z - 2),
+            new Movimento(x - 1, z + 2),
+            new Movimento(x + 1, z + 2),
+            new Movimento(x + 1, z - 2),
+            new Movimento(x - 2, z - 1),
+            new Movimento(x + 2, z - 1),
+            new Movimento(x - 2, z + 1),
+            new Movimento(x + 2, z + 1),
+        };
     }
 }

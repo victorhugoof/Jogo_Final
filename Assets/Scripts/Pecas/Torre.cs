@@ -1,45 +1,53 @@
-﻿public class Torre : PecaXadrez {
-    public override bool[,] Movimentos() {
-        var r = new bool[8, 8];
+﻿using System.Collections.Generic;
 
-        int i;
+public class Torre : Peca {
+    protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
+        return GetMovimentos(GetX(), GetZ(), this);
+    }
 
-        // Right
-        i = GetX();
-        while (true) {
-            i++;
-            if (i >= 8) break;
+    public static IEnumerable<Movimento> GetMovimentos(int X, int Z, Peca peca) {
+        var lista = new List<Movimento>();
 
-            if (PermiteMover(i, GetZ(), ref r)) break;
+        var x = X;
+        var z = Z;
+        while (true) { // Direita
+            x++;
+            if (!Utils.IsValidPosition(x, z)) break;
+            if (GetPecaJogador(x, z, peca)) break;
+            lista.Add(new Movimento(x, z));
+            if (GetPecaAdversario(x, z, peca)) break;
         }
 
-        // Left
-        i = GetX();
-        while (true) {
-            i--;
-            if (i < 0) break;
-
-            if (PermiteMover(i, GetZ(), ref r)) break;
+        x = X;
+        z = Z;
+        while (true) { // Esquerda
+            x--;
+            if (!Utils.IsValidPosition(x, z)) break;
+            if (GetPecaJogador(x, z, peca)) break;
+            lista.Add(new Movimento(x, z));
+            if (GetPecaAdversario(x, z, peca)) break;
         }
 
-        // Up
-        i = GetZ();
-        while (true) {
-            i++;
-            if (i >= 8) break;
-
-            if (PermiteMover(GetX(), i, ref r)) break;
+        x = X;
+        z = Z;
+        while (true) { // Baixo
+            z--;
+            if (!Utils.IsValidPosition(x, z)) break;
+            if (GetPecaJogador(x, z, peca)) break;
+            lista.Add(new Movimento(x, z));
+            if (GetPecaAdversario(x, z, peca)) break;
         }
 
-        // Down
-        i = GetZ();
-        while (true) {
-            i--;
-            if (i < 0) break;
-
-            if (PermiteMover(GetX(), i, ref r)) break;
+        x = X;
+        z = Z;
+        while (true) { // Cima
+            z++;
+            if (!Utils.IsValidPosition(x, z)) break;
+            if (GetPecaJogador(x, z, peca)) break;
+            lista.Add(new Movimento(x, z));
+            if (GetPecaAdversario(x, z, peca)) break;
         }
 
-        return r;
+        return lista;
     }
 }

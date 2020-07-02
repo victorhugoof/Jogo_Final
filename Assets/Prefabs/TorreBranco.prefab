@@ -92,4 +92,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b548e747ad4c739c8c3f56ed366b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  branca: 1
+  isBranca: 1
+  isMovimentou: 0

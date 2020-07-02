@@ -1,16 +1,20 @@
-﻿public class Rei : PecaXadrez {
-    public override bool[,] Movimentos() {
-        var movimentos = new bool[8, 8];
+﻿using System.Collections.Generic;
 
-        PermiteMover(GetX() + 1, GetZ(), ref movimentos); // up
-        PermiteMover(GetX() - 1, GetZ(), ref movimentos); // down
-        PermiteMover(GetX(), GetZ() - 1, ref movimentos); // left
-        PermiteMover(GetX(), GetZ() + 1, ref movimentos); // right
-        PermiteMover(GetX() + 1, GetZ() - 1, ref movimentos); // up left
-        PermiteMover(GetX() - 1, GetZ() - 1, ref movimentos); // down left
-        PermiteMover(GetX() + 1, GetZ() + 1, ref movimentos); // up right
-        PermiteMover(GetX() - 1, GetZ() + 1, ref movimentos); // down right
+public class Rei : Peca {
 
-        return movimentos;
+    protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
+        var x = GetX();
+        var z = GetZ();
+
+        return new List<Movimento> {
+            new Movimento(x - 1, z - 1), // Diagonal esquerda baixo
+            new Movimento(x - 1, z), // Esquerda
+            new Movimento(x - 1, z + 1), // Diagonal esquerda cima
+            new Movimento(x, z - 1), // Baixo
+            new Movimento(x, z + 1), // Cima
+            new Movimento(x + 1, z - 1), // Diagonal direita baixo
+            new Movimento(x + 1, z), // Direita
+            new Movimento(x + 1, z + 1) // Diagonal direita cima
+        };
     }
 }

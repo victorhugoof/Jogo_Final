@@ -1,54 +1,57 @@
-﻿public class Bispo : PecaXadrez {
-    public override bool[,] Movimentos() {
-        var r = new bool[8, 8];
+﻿using System.Collections.Generic;
 
-        int i, j;
+public class Bispo : Peca {
+    protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
+        return GetMovimentos(GetX(), GetZ(), this);
+    }
 
-        // Top left
-        i = GetX();
-        j = GetZ();
-        while (true) {
-            i--;
-            j++;
-            if (i < 0 || j >= 8) break;
-
-            if (PermiteMover(i, j, ref r)) break;
+    public static IEnumerable<Movimento> GetMovimentos(int X, int Z, Peca peca) {
+        var lista = new List<Movimento>();
+        
+        var x = X;
+        var z = Z;
+        while (true) { // Diagonal direita cima
+            x++;
+            z++;
+            if (!Utils.IsValidPosition(x, z)) break;
+            if (GetPecaJogador(x, z, peca)) break;
+            lista.Add(new Movimento(x, z));
+            if (GetPecaAdversario(x, z, peca)) break;
         }
 
-        // Top right
-        i = GetX();
-        j = GetZ();
-        while (true) {
-            i++;
-            j++;
-            if (i >= 8 || j >= 8) break;
-
-            if (PermiteMover(i, j, ref r)) break;
+        x = X;
+        z = Z;
+        while (true) { // Diagonal esquerda cima
+            x--;
+            z++;
+            if (!Utils.IsValidPosition(x, z)) break;
+            if (GetPecaJogador(x, z, peca)) break;
+            lista.Add(new Movimento(x, z));
+            if (GetPecaAdversario(x, z, peca)) break;
         }
 
-        // Down left
-        i = GetX();
-        j = GetZ();
-        while (true) {
-            i--;
-            j--;
-            if (i < 0 || j < 0) break;
-
-            if (PermiteMover(i, j, ref r)) break;
+        x = X;
+        z = Z;
+        while (true) { // Diagonal esquerda baixo
+            x--;
+            z--;
+            if (!Utils.IsValidPosition(x, z)) break;
+            if (GetPecaJogador(x, z, peca)) break;
+            lista.Add(new Movimento(x, z));
+            if (GetPecaAdversario(x, z, peca)) break;
         }
 
-        // Down right
-        i = GetX();
-        j = GetZ();
-        while (true) {
-            i++;
-            j--;
-            if (i >= 8 || j < 0) break;
-
-            if (PermiteMover(i, j, ref r)) break;
+        x = X;
+        z = Z;
+        while (true) { // Diagonal direita baixo
+            x++;
+            z--;
+            if (!Utils.IsValidPosition(x, z)) break;
+            if (GetPecaJogador(x, z, peca)) break;
+            lista.Add(new Movimento(x, z));
+            if (GetPecaAdversario(x, z, peca)) break;
         }
 
-
-        return r;
+        return lista;
     }
 }
