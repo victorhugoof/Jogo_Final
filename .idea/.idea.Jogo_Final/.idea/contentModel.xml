@@ -7,6 +7,8 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="Marcador.cs" t="Include" />
           <e p="Movimento.cs" t="Include" />
           <e p="Peca.cs" t="Include" />
@@ -18,6 +20,8 @@
             <e p="Rei.cs" t="Include" />
             <e p="Torre.cs" t="Include" />
           </e>
+          <e p="PerguntaManager.cs" t="Include" />
+          <e p="Question.cs" t="Include" />
           <e p="Tabuleiro.cs" t="Include" />
           <e p="Utils.cs" t="Include" />
         </e>

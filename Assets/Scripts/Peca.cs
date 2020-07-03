@@ -26,7 +26,6 @@ public abstract class Peca : MonoBehaviour {
      */
     public List<Movimento> GetMovimentos() {
         var lista = GetMovimentosPossiveis();
-        var pecas = _tabuleiro.pecas;
 
         return lista.Where(movimento => {
             var x = movimento.X;
@@ -54,6 +53,13 @@ public abstract class Peca : MonoBehaviour {
      * Deve retornar todos os movimentos que a peça pode dar
      */
     protected abstract IEnumerable<Movimento> GetMovimentosPossiveis();
+
+    /**
+     * Retorna todas as pecas do tabuleiro
+     */
+    protected IEnumerable<Peca> GetPecas() {
+        return _tabuleiro.pecas.Cast<Peca>().ToList();
+    }
 
     /**
      * Busca uma peca do jogador na posição informada, se

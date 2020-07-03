@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 /**
  * Script responsável pelo jogo (tabuleiro)
@@ -9,11 +10,16 @@ public class Tabuleiro : MonoBehaviour {
     private static readonly Quaternion RotacaoPreto = Quaternion.Euler(0, 90, 0);
     private Camera _camera;
 
+    private bool _respondendo;
     private bool _chequeMateBranco;
     private bool _chequeMatePreto;
     private Marcador _marcador;
     private Peca _pecaSelecionada;
+    private Peca _pecaComer;
     private bool _vezBranco = true;
+    private GameManager _gameManager;
+    private AudioManager _audioManager;
+    private PerguntaManager _perguntaManager;
 
     public Peca[,] pecas;
     public GameObject bispoBranco;
@@ -30,6 +36,10 @@ public class Tabuleiro : MonoBehaviour {
     public GameObject torrePreto;
     public float tamanhoCasa;
 
+    public Text textPlayer;
+    public Text textChequeMate;
+    public Text textPontuacao;
+
     /**
      * Inicia o marcador e a camera (para buscar o ponto clicado em tela)
      * Cria as peças no tabuleiro
@@ -37,8 +47,13 @@ public class Tabuleiro : MonoBehaviour {
     public void Start() {
         _marcador = gameObject.GetComponent<Marcador>();
         _camera = Camera.main;
+        _gameManager = FindObjectOfType<GameManager>();
+        _audioManager = FindObjectOfType<AudioManager>();
+        _perguntaManager = FindObjectOfType<PerguntaManager>();
 
         CriarPecas();
+        AtualizaTextPontuacao();
+        textChequeMate.text = "";
     }
 
     /**
@@ -46,6 +61,16 @@ public class Tabuleiro : MonoBehaviour {
      * Se tiver clicado seleciona ou move a peça
      */
     public void Update() {
+        
+        if (_gameManager.IsPausado()) return;
+        if (_perguntaManager.IsRespondendo()) return;
+
+        if (_respondendo) {
+            var acertou = _perguntaManager.IsRespondeuCerto();
+            ComerPeca(acertou);
+            _respondendo = false;
+        }
+
         var pontos = GetSelecaoMouse();
         var x = pontos[0];
         var z = pontos[1];
@@ -105,8 +130,13 @@ public class Tabuleiro : MonoBehaviour {
         var movimento = _pecaSelecionada.GetMovimentos().FirstOrDefault(mv => mv.X == x && mv.Z == z);
         if (movimento != null) {
             var pecaAdversaria = pecas[x, z];
-            if (pecaAdversaria && pecaAdversaria.isBranca != _vezBranco) // Comeu peca
-                Destroy(pecaAdversaria.gameObject);
+            if (pecaAdversaria && pecaAdversaria.isBranca != _vezBranco) { // Comeu peca
+                _pecaComer = pecaAdversaria;
+                _respondendo = true;
+                _perguntaManager.Perguntar();
+                return;
+            } 
+                
 
             var oldX = _pecaSelecionada.GetX();
             var oldZ = _pecaSelecionada.GetZ();
@@ -119,6 +149,37 @@ public class Tabuleiro : MonoBehaviour {
             TrocarJogador();
         }
 
+        _pecaSelecionada = null;
+        _marcador.DesmarcarPecas();
+    }
+
+    private void ComerPeca(bool acerto) {
+        var peca = acerto ? _pecaSelecionada : _pecaComer;
+        var pecaAdversaria = acerto ? _pecaComer : _pecaSelecionada;
+        
+        Destroy(pecaAdversaria.gameObject);
+        if (acerto) {
+            _audioManager.PlayComeuPeca();
+        } else if (!pecaAdversaria.IsRei()) {
+            _audioManager.PlayGameOver();
+        }
+        if (pecaAdversaria.IsRei()) {
+            _gameManager.GameOver(acerto ? _vezBranco : !_vezBranco);
+        }
+
+        var newX = pecaAdversaria.GetX();
+        var newZ = pecaAdversaria.GetZ();
+        var oldX = peca.GetX();
+        var oldZ = peca.GetZ();
+        peca.transform.position = GetPosicao(newX, newZ);
+        peca.isMovimentou = true;
+
+        pecas[newX, newZ] = peca;
+        pecas[oldX, oldZ] = null;
+        ProcessaChequeMate(newX, newZ);
+        TrocarJogador();
+
+        _pecaComer = null;
         _pecaSelecionada = null;
         _marcador.DesmarcarPecas();
     }
@@ -141,6 +202,8 @@ public class Tabuleiro : MonoBehaviour {
      */
     private void TrocarJogador() {
         _vezBranco = !_vezBranco;
+        textPlayer.text = $"Jogador: {(_vezBranco ? "Branco" : "Preto")}";
+        AtualizaTextPontuacao();
         foreach (var peca in pecas)
             if (peca)
                 PermiteMoverPeca(peca); // Verifica GameOver
@@ -150,6 +213,7 @@ public class Tabuleiro : MonoBehaviour {
      * Processa cheque-mate, verifica se o rei ficou na mira de alguma peça inimiga
      */
     private void ProcessaChequeMate(int x, int z) {
+        textChequeMate.text = "";
         _chequeMateBranco = false;
         _chequeMatePreto = false;
 
@@ -169,8 +233,7 @@ public class Tabuleiro : MonoBehaviour {
         if (_chequeMateBranco && peca.isBranca) {
             if (peca.IsRei()) {
                 if (peca.GetMovimentos().Count > 0) return true;
-
-                GameOver();
+                _gameManager.GameOver(!_vezBranco);
                 return false;
             }
 
@@ -180,8 +243,7 @@ public class Tabuleiro : MonoBehaviour {
         if (_chequeMatePreto && !peca.isBranca) {
             if (peca.IsRei()) {
                 if (peca.GetMovimentos().Count > 0) return true;
-
-                GameOver();
+                _gameManager.GameOver(!_vezBranco);
                 return false;
             }
 
@@ -255,13 +317,25 @@ public class Tabuleiro : MonoBehaviour {
         else
             _chequeMateBranco = true;
 
-        Debug.Log("Cheque-mate " + (_vezBranco ? "Preto" : "Branco"));
+        textChequeMate.text = $"Jogador em cheque-mate!";
     }
 
     /**
-     * Método que marca como GameOver
+     * Método que atualiza o texto de pontuação
      */
-    private void GameOver() {
-        Debug.Log("GameOver! Ganhador: " + (_vezBranco ? "Preto" : "Branco"));
+    private void AtualizaTextPontuacao() {
+        var brancas = 0;
+        var pretas = 0;
+        foreach (var peca in pecas) {
+            if (peca) {
+                if (peca.isBranca) {
+                    brancas++;
+                } else {
+                    pretas++;
+                }
+            }
+        }
+
+        textPontuacao.text = $"Branco:\t{brancas}\r\nPreto:\t{pretas}";
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 
 /**
  * Script de peça tipo Rei
@@ -20,11 +19,13 @@ public class Rei : Peca {
         var z = GetZ();
 
         var lista = new List<Movimento>();
+        var pecasAdversario = GetPecasAdversarioNotRei();
         foreach (var posicao in _posicoes) {
             var posicaoX = x + posicao[0];
             var posicaoZ = z + posicao[1];
 
-            if (IsSemPecasAdversariasVizinhas(posicaoX, posicaoZ)) lista.Add(new Movimento(posicaoX, posicaoZ));
+            if (!IsAdversarioPodeComer(posicaoX, posicaoZ, pecasAdversario))
+                lista.Add(new Movimento(posicaoX, posicaoZ));
         }
 
         return lista;
@@ -33,24 +34,44 @@ public class Rei : Peca {
     /**
      * Retorna se a movimento que o Rei não irá colocá-lo em cheque
      */
-    private bool IsSemPecasAdversariasVizinhas(int x, int z) {
+    private bool IsAdversarioPodeComer(int x, int z, IEnumerable<Peca> pecasAdversario) {
+        foreach (var peca in pecasAdversario) {
+            if (peca.IsPeao()) {
+                if (((Peao) peca).PodeMatarRei(x, z)) {
+                    return true;
+                }
+            } else if (peca.GetMovimentos().Exists(movimento => movimento.X == x && movimento.Z == z)) {
+                return true;
+            }
+        }
+
         foreach (var posicao in _posicoes) {
             var posicaoX = posicao[0];
             var posicaoZ = posicao[1];
 
             var pecaAdversario = GetPecaAdversario(x + posicaoX, z + posicaoZ);
-            if (pecaAdversario) {
-                if (pecaAdversario.IsPeao()) {
-                    if (((Peao) pecaAdversario).PodeMatarRei(x, z)) {
-                        return false;
-                    }
-                } else if (pecaAdversario.GetMovimentos().Exists(movimento => movimento.X == x && movimento.Z == z)) {
-                    Debug.Log($"Pode matar rei! X: {x + posicaoX}, Z: {z + posicaoZ}");
-                    return false;
-                }
+            if (pecaAdversario
+                && pecaAdversario.IsRei()
+                && pecaAdversario.GetMovimentos().Exists(movimento => movimento.X == x && movimento.Z == z)) {
+                return true;
             }
         }
 
-        return true;
+        return false;
+    }
+
+    /**
+     * Retorna todas as pecas adversárias
+     */
+    private IEnumerable<Peca> GetPecasAdversarioNotRei() {
+        var pecas = GetPecas();
+        var pecasAdversarias = new List<Peca>();
+        foreach (var peca in pecas) {
+            if (peca && peca.isBranca != isBranca && !peca.IsRei()) {
+                pecasAdversarias.Add(peca);
+            }
+        }
+
+        return pecasAdversarias;
     }
 }

@@ -20,10 +20,12 @@ public class Peao : Peca {
 
     private List<Movimento> MovimentosBranco(int x, int z) {
         var lista = new List<Movimento>();
-        if (!GetPecaJogador(x, z + 1) && !GetPecaAdversario(x, z + 1)) {
-            // Só vai pra frente se não tiver nenhuma peca no caminho
+        if (!GetPecaJogador(x, z + 1) && !GetPecaAdversario(x, z + 1)) { // 1 casa a frente
             lista.Add(new Movimento(x, z + 1));
-            if (!isMovimentou) lista.Add(new Movimento(x, z + 2));
+        }
+        
+        if (!isMovimentou && !GetPecaJogador(x, z + 2) && !GetPecaAdversario(x, z + 2)) { // 2 casas a frente caso nao movimentou ainda
+            lista.Add(new Movimento(x, z + 2));
         }
 
         var pecaDiagonalCimaDireita = GetPecaAdversario(x + 1, z + 1);
@@ -39,10 +41,12 @@ public class Peao : Peca {
 
     private List<Movimento> MovimentosPreto(int x, int z) {
         var lista = new List<Movimento>();
-        if (!GetPecaJogador(x, z - 1) && !GetPecaAdversario(x, z - 1)) {
-            // Só vai pra frente se não tiver nenhuma peca no caminho
+        if (!GetPecaJogador(x, z - 1) && !GetPecaAdversario(x, z - 1)) { // 1 casa a frente
             lista.Add(new Movimento(x, z - 1));
-            if (!isMovimentou) lista.Add(new Movimento(x, z - 2));
+        }
+        
+        if (!isMovimentou && !GetPecaJogador(x, z - 2) && !GetPecaAdversario(x, z - 2)) { // 2 casas a frente caso nao movimentou ainda
+            lista.Add(new Movimento(x, z - 2));
         }
 
         var pecaDiagonalCimaDireita = GetPecaAdversario(x + 1, z - 1);

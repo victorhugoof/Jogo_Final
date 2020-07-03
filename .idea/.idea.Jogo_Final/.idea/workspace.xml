@@ -20,9 +20,150 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c29fc4d-b5e5-4e39-8bd0-5112da2bc28b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font/Upheaval.fon" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font/Upheaval.fon.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font/kenvector_future.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font/kenvector_future.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font/kenvector_future_thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font/kenvector_future_thin.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font/upheavtt.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Font/upheavtt.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Bishop.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Bishop.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Base_Wood.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Base_Wood.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Grid.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Grid.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_King.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_King.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Knight.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Knight.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Pawn.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Pawn.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Queen.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Queen.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Rook.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/GPVFX_Rook.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Black.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Black.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Chessboard Base.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Chessboard Base.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Chessboard Base_Painted.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Chessboard Base_Painted.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Gold.002.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Gold.002.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Material.018.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Material.018.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Material.019.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Material.019.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Materials/GPVFX_Wood 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Materials/GPVFX_Wood 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Outline.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Outline.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Selected Chessman.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Selected Chessman.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/GPVFX_Chessboard Painted.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/GPVFX_Chessboard Painted.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/GPVFX_Wood 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/GPVFX_Wood 1.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished Dark_diffuse_S.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished Dark_diffuse_S.tiff.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished Dark_normalmap_S.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished Dark_normalmap_S.tiff.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_diffuse_S.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_diffuse_S.tiff.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_gloss_S.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_gloss_S.tiff.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_normalmap_S.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_normalmap_S.tiff.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_roughness_S.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_roughness_S.tiff.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/WHITE_PRIMARY.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/WHITE_PRIMARY.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/White.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/White.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/White_Board.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/White_Board.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Question.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Question.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Bishop.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Bishop.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Base_Wood.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Base_Wood.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Grid.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Grid.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_King.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_King.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Knight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Knight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Pawn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Pawn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Queen.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Queen.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Rook.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/GPVFX_Rook.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Black.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Black.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Chessboard Base.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Chessboard Base.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Chessboard Base_Painted.001.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Chessboard Base_Painted.001.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Gold.002.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Gold.002.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Material.018.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Material.018.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Material.019.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Material.019.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Materials/GPVFX_Wood 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Materials/GPVFX_Wood 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Outline.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Outline.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Selected Chessman.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Selected Chessman.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/GPVFX_Chessboard Painted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/GPVFX_Chessboard Painted.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/GPVFX_Wood 1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/GPVFX_Wood 1.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished Dark_diffuse_S.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished Dark_diffuse_S.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished Dark_normalmap_S.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished Dark_normalmap_S.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_diffuse_S.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_diffuse_S.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_gloss_S.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_gloss_S.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_normalmap_S.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_normalmap_S.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_roughness_S.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_roughness_S.tiff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/WHITE_PRIMARY.001.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/WHITE_PRIMARY.001.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/White.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/White_Board.001.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GPVFX_3D Chess Set/3D/Materials/White_Board.001.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Peca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Peca.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,19 +183,23 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movimento.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/b4/a16a1abb/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/14521CBF-3877-4DFF-9F25-D7CBB2E5BB36/16/faa219bf/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CCF986DB-BDBE-4A07-B9F5-F580F665CAF9/f2/372c356d/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CCF986DB-BDBE-4A07-B9F5-F580F665CAF9/87/ed112502/Camera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Question.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CCF986DB-BDBE-4A07-B9F5-F580F665CAF9/32/b3739d6a/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Marcador.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Peca.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -72,15 +217,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TabuleiroXadrez.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movimento.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Marcador.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Peca.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pergunta.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Question.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Peca.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" />
       </list>
     </option>
   </component>
@@ -136,7 +286,8 @@
     <MESSAGE value="Apagado build antigo" />
     <MESSAGE value="Implementado gameover" />
     <MESSAGE value="Comentários" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comentários" />
+    <MESSAGE value="Correção Rei" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção Rei" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="268" width="935" height="511" key="#xdebugger.evaluate" timestamp="1593713922533">
@@ -151,74 +302,74 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state width="477" height="506" key="DebuggerActiveHint/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593713904592" />
-    <state width="1874" height="369" key="GridCell.Tab.0.bottom" timestamp="1593783149575">
+    <state width="1874" height="369" key="GridCell.Tab.0.bottom" timestamp="1593783636979">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783149575" />
-    <state width="1874" height="369" key="GridCell.Tab.0.center" timestamp="1593783149575">
+    <state width="1874" height="369" key="GridCell.Tab.0.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636979" />
+    <state width="1874" height="369" key="GridCell.Tab.0.center" timestamp="1593783636979">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783149575" />
-    <state width="1874" height="369" key="GridCell.Tab.0.left" timestamp="1593783149574">
+    <state width="1874" height="369" key="GridCell.Tab.0.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636979" />
+    <state width="1874" height="369" key="GridCell.Tab.0.left" timestamp="1593783636979">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783149574" />
-    <state width="1874" height="369" key="GridCell.Tab.0.right" timestamp="1593783149575">
+    <state width="1874" height="369" key="GridCell.Tab.0.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636979" />
+    <state width="1874" height="369" key="GridCell.Tab.0.right" timestamp="1593783636979">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783149575" />
-    <state width="1874" height="369" key="GridCell.Tab.1.bottom" timestamp="1593783166118">
+    <state width="1874" height="369" key="GridCell.Tab.0.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636979" />
+    <state width="1874" height="369" key="GridCell.Tab.1.bottom" timestamp="1593783636979">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783166118" />
-    <state width="1874" height="369" key="GridCell.Tab.1.center" timestamp="1593783166118">
+    <state width="1874" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636979" />
+    <state width="1874" height="369" key="GridCell.Tab.1.center" timestamp="1593783636979">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.1.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783166118" />
-    <state width="1874" height="369" key="GridCell.Tab.1.left" timestamp="1593783166118">
+    <state width="1874" height="369" key="GridCell.Tab.1.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636979" />
+    <state width="1874" height="369" key="GridCell.Tab.1.left" timestamp="1593783636979">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.1.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783166118" />
-    <state width="1874" height="369" key="GridCell.Tab.1.right" timestamp="1593783166118">
+    <state width="1874" height="369" key="GridCell.Tab.1.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636979" />
+    <state width="1874" height="369" key="GridCell.Tab.1.right" timestamp="1593783636979">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.1.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783166118" />
-    <state width="1874" height="369" key="GridCell.Tab.2.bottom" timestamp="1593722154549">
+    <state width="1874" height="369" key="GridCell.Tab.1.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636979" />
+    <state width="1874" height="369" key="GridCell.Tab.2.bottom" timestamp="1593783636980">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.2.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154549" />
-    <state width="1874" height="369" key="GridCell.Tab.2.center" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.2.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636980" />
+    <state width="1874" height="369" key="GridCell.Tab.2.center" timestamp="1593783636980">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.2.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.2.left" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.2.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636980" />
+    <state width="1874" height="369" key="GridCell.Tab.2.left" timestamp="1593783636980">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.2.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.2.right" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.2.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636980" />
+    <state width="1874" height="369" key="GridCell.Tab.2.right" timestamp="1593783636980">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.2.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.3.bottom" timestamp="1593722154549">
+    <state width="1874" height="369" key="GridCell.Tab.2.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636980" />
+    <state width="1874" height="369" key="GridCell.Tab.3.bottom" timestamp="1593783636980">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.3.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154549" />
-    <state width="1874" height="369" key="GridCell.Tab.3.center" timestamp="1593722154549">
+    <state width="1874" height="369" key="GridCell.Tab.3.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636980" />
+    <state width="1874" height="369" key="GridCell.Tab.3.center" timestamp="1593783636980">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.3.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154549" />
-    <state width="1874" height="369" key="GridCell.Tab.3.left" timestamp="1593722154549">
+    <state width="1874" height="369" key="GridCell.Tab.3.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636980" />
+    <state width="1874" height="369" key="GridCell.Tab.3.left" timestamp="1593783636980">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.3.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154549" />
-    <state width="1874" height="369" key="GridCell.Tab.3.right" timestamp="1593722154549">
+    <state width="1874" height="369" key="GridCell.Tab.3.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636980" />
+    <state width="1874" height="369" key="GridCell.Tab.3.right" timestamp="1593783636980">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.3.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154549" />
-    <state x="594" y="192" width="722" height="659" key="RiderGenerateDialog" timestamp="1593723143276">
+    <state width="1874" height="369" key="GridCell.Tab.3.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783636980" />
+    <state x="594" y="192" width="722" height="659" key="RiderGenerateDialog" timestamp="1593788094092">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="594" y="192" width="722" height="659" key="RiderGenerateDialog/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593723143276" />
+    <state x="594" y="192" width="722" height="659" key="RiderGenerateDialog/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593788094092" />
     <state x="449" y="159" width="1337" height="730" key="SettingsEditor" timestamp="1593729166595">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
@@ -227,10 +378,10 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="200" y="164" width="1720" height="848" key="VCS.FileHistoryDialog/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593737751510" />
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593781436393">
+    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593783393982">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593781436393" />
+    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783393982" />
     <state x="1920" y="0" width="1371" height="1004" maximized="true" key="dock-window-1" timestamp="1593732151103">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
