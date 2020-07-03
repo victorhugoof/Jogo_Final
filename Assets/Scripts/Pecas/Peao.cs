@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 /**
  * Script de peça tipo Peão
@@ -56,13 +57,15 @@ public class Peao : Peca {
     }
 
     public bool PodeMatarRei(int x, int z) {
+        var xPeca = GetX();
+        var zPeca = GetZ();
         if (isBranca) {
-            var diagonalDireita = x == x + 1 && z == z + 1;
-            var diagonalEsquerda = x == x - 1 && z == z + 1;
+            var diagonalDireita = x == xPeca + 1 && z == zPeca + 1;
+            var diagonalEsquerda = x == xPeca - 1 && z == zPeca + 1;
             return diagonalDireita || diagonalEsquerda;
         } else {
-            var diagonalDireita = x == x + 1 && z == z - 1;
-            var diagonalEsquerda = x == x - 1 && z == z - 1;
+            var diagonalDireita = x == xPeca + 1 && z == zPeca - 1;
+            var diagonalEsquerda = x == xPeca - 1 && z == zPeca - 1;
             return diagonalDireita || diagonalEsquerda;
         }
     }

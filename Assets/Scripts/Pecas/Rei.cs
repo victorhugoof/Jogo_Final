@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 /**
  * Script de peça tipo Rei
@@ -40,12 +41,13 @@ public class Rei : Peca {
             var pecaAdversario = GetPecaAdversario(x + posicaoX, z + posicaoZ);
             if (pecaAdversario) {
                 if (pecaAdversario.IsPeao()) {
-                    var podeMatar = ((Peao) pecaAdversario).PodeMatarRei(x, z);
-                    return podeMatar;
-                }
-
-                if (pecaAdversario.GetMovimentos().Exists(movimento => movimento.X == x && movimento.Z == z))
+                    if (((Peao) pecaAdversario).PodeMatarRei(x, z)) {
+                        return false;
+                    }
+                } else if (pecaAdversario.GetMovimentos().Exists(movimento => movimento.X == x && movimento.Z == z)) {
+                    Debug.Log($"Pode matar rei! X: {x + posicaoX}, Z: {z + posicaoZ}");
                     return false;
+                }
             }
         }
 

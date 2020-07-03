@@ -21,17 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0c29fc4d-b5e5-4e39-8bd0-5112da2bc28b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Marcador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Marcador.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movimento.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movimento.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Peca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Peca.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +76,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" />
       </list>
     </option>
   </component>
@@ -117,10 +108,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="34235">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="34235" />
       <method v="2" />
     </configuration>
   </component>
@@ -144,7 +135,8 @@
     <MESSAGE value="Commit" />
     <MESSAGE value="Apagado build antigo" />
     <MESSAGE value="Implementado gameover" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementado gameover" />
+    <MESSAGE value="Comentários" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comentários" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="268" width="935" height="511" key="#xdebugger.evaluate" timestamp="1593713922533">
@@ -159,38 +151,38 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state width="477" height="506" key="DebuggerActiveHint/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593713904592" />
-    <state width="1874" height="369" key="GridCell.Tab.0.bottom" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.0.bottom" timestamp="1593783149575">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.0.center" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.0.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783149575" />
+    <state width="1874" height="369" key="GridCell.Tab.0.center" timestamp="1593783149575">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.0.left" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.0.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783149575" />
+    <state width="1874" height="369" key="GridCell.Tab.0.left" timestamp="1593783149574">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.0.right" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.0.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783149574" />
+    <state width="1874" height="369" key="GridCell.Tab.0.right" timestamp="1593783149575">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.0.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.1.bottom" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.0.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783149575" />
+    <state width="1874" height="369" key="GridCell.Tab.1.bottom" timestamp="1593783166118">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.1.center" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783166118" />
+    <state width="1874" height="369" key="GridCell.Tab.1.center" timestamp="1593783166118">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.1.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.1.left" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.1.center/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783166118" />
+    <state width="1874" height="369" key="GridCell.Tab.1.left" timestamp="1593783166118">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.1.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
-    <state width="1874" height="369" key="GridCell.Tab.1.right" timestamp="1593722154548">
+    <state width="1874" height="369" key="GridCell.Tab.1.left/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783166118" />
+    <state width="1874" height="369" key="GridCell.Tab.1.right" timestamp="1593783166118">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1874" height="369" key="GridCell.Tab.1.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593722154548" />
+    <state width="1874" height="369" key="GridCell.Tab.1.right/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593783166118" />
     <state width="1874" height="369" key="GridCell.Tab.2.bottom" timestamp="1593722154549">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
@@ -235,10 +227,10 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="200" y="164" width="1720" height="848" key="VCS.FileHistoryDialog/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593737751510" />
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593737867617">
+    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593781436393">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593737867617" />
+    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593781436393" />
     <state x="1920" y="0" width="1371" height="1004" maximized="true" key="dock-window-1" timestamp="1593732151103">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -247,9 +239,9 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="595" y="89" width="729" height="870" key="find.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593779779920" />
-    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1593779472548">
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1593781921770">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593779472548" />
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593781921770" />
   </component>
 </project>
