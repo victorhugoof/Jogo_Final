@@ -279,8 +279,8 @@ public class Tabuleiro : MonoBehaviour {
         CriaPeca(0, 7, torrePreto, RotacaoPreto);
         CriaPeca(1, 7, cavaloPreto, RotacaoPreto);
         CriaPeca(2, 7, bispoPreto, RotacaoPreto);
-        CriaPeca(3, 7, reiPreto, RotacaoPreto);
-        CriaPeca(4, 7, rainhaPreto, RotacaoPreto);
+        CriaPeca(3, 7, rainhaPreto, RotacaoPreto);
+        CriaPeca(4, 7, reiPreto, RotacaoPreto);
         CriaPeca(5, 7, bispoPreto, RotacaoPreto);
         CriaPeca(6, 7, cavaloPreto, RotacaoPreto);
         CriaPeca(7, 7, torrePreto, RotacaoPreto);
