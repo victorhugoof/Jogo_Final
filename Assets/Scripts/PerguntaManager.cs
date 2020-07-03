@@ -5,6 +5,8 @@ using Random = System.Random;
 
 public class PerguntaManager : MonoBehaviour {
 
+    private static readonly Random _random = new Random();
+
     public GameObject perguntaPanel;
     public Text contadorTempo;
     public Text perguntaTitle;
@@ -37,8 +39,7 @@ public class PerguntaManager : MonoBehaviour {
 
     public void Perguntar() {
         _timeout = timeOutPergunta;
-        var random = new Random();
-        _current = _perguntas[random.Next(_perguntas.Count)];
+        _current = _perguntas[_random.Next(_perguntas.Count)];
 
         var processadas = new List<int>();
         for (var i = 0; i < 4; i++) {
@@ -73,7 +74,7 @@ public class PerguntaManager : MonoBehaviour {
     }
 
     private static int GetRandomIndex(List<int> processados, int size) {
-        var index = new Random().Next(size);
+        var index = _random.Next(size);
         return processados.Contains(index) ? GetRandomIndex(processados, size) : index;
     }
 
