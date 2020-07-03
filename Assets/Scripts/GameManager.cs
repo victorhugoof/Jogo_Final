@@ -44,7 +44,6 @@ public class GameManager : MonoBehaviour {
     }
 
     public void SairJogo() {
-        Debug.Log("Clicou em sair");
         Application.Quit();
     }
 }

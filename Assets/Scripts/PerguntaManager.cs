@@ -16,8 +16,13 @@ public class PerguntaManager : MonoBehaviour {
     private float _timeout;
 
     private readonly List<Question> _perguntas = new List<Question> {
-        new Question("Quanto é a raiz quadrada de 9?", "81", "9", "18", "71"),
-        new Question("Quanto é a raiz quadrada de 8?", "64", "8", "16", "63"),
+        new Question("Quanto é a raiz quadrada de 9?", "3", "9", "81", "71"),
+        new Question("Quanto é 8^2?", "64", "8", "16", "63"),
+        new Question("Quanto é 4^2?", "16", "4", "12", "2"),
+        new Question("Quanto é 2^3?", "2 * 2 * 2", "6", "2 * 3", "28"),
+        new Question("Quantos minutos têm em 3 horas?", "180 minutos", "160 minutos", "120 minutos", "300 minutos"),
+        new Question("Em que ano ocorreu o desastre do 11 de setembro?", "2001", "2000", "2002", "2003"),
+        new Question("Quem foi o responsável pelo desenvolvimento deste jogo?", "Victor Hugo M. Fernandes", "Beltrano", "Cicrano", "Fulano"),
     };
 
     void Update() {
@@ -37,9 +42,9 @@ public class PerguntaManager : MonoBehaviour {
 
         var processadas = new List<int>();
         for (var i = 0; i < 4; i++) {
-            var index = GetRandomIndex(random, processadas, opcoes.Count);
+            var index = GetRandomIndex(processadas, 4);
             processadas.Add(index);
-            opcoes[index].text = GetResposta(index);
+            opcoes[i].text = GetResposta(index);
         }
 
         perguntaTitle.text = _current.Pergunta;
@@ -67,9 +72,9 @@ public class PerguntaManager : MonoBehaviour {
         return _acertou;
     }
 
-    private static int GetRandomIndex(Random random, List<int> processados, int size) {
-        var index = random.Next(size);
-        return processados.Contains(index) ? GetRandomIndex(random, processados, size) : index;
+    private static int GetRandomIndex(List<int> processados, int size) {
+        var index = new Random().Next(size);
+        return processados.Contains(index) ? GetRandomIndex(processados, size) : index;
     }
 
     private string GetResposta(int index) {

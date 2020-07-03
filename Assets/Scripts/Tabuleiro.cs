@@ -11,8 +11,8 @@ public class Tabuleiro : MonoBehaviour {
     private Camera _camera;
 
     private bool _respondendo;
-    private bool _chequeMateBranco;
-    private bool _chequeMatePreto;
+    private bool _chequeBranco;
+    private bool _chequePreto;
     private Marcador _marcador;
     private Peca _pecaSelecionada;
     private Peca _pecaComer;
@@ -145,7 +145,7 @@ public class Tabuleiro : MonoBehaviour {
 
             pecas[x, z] = _pecaSelecionada;
             pecas[oldX, oldZ] = null;
-            ProcessaChequeMate(x, z);
+            ProcessaCheque(x, z);
             TrocarJogador();
         }
 
@@ -176,7 +176,7 @@ public class Tabuleiro : MonoBehaviour {
 
         pecas[newX, newZ] = peca;
         pecas[oldX, oldZ] = null;
-        ProcessaChequeMate(newX, newZ);
+        ProcessaCheque(newX, newZ);
         TrocarJogador();
 
         _pecaComer = null;
@@ -210,27 +210,27 @@ public class Tabuleiro : MonoBehaviour {
     }
 
     /**
-     * Processa cheque-mate, verifica se o rei ficou na mira de alguma peça inimiga
+     * Processa cheque, verifica se o rei ficou na mira de alguma peça inimiga
      */
-    private void ProcessaChequeMate(int x, int z) {
+    private void ProcessaCheque(int x, int z) {
         textChequeMate.text = "";
-        _chequeMateBranco = false;
-        _chequeMatePreto = false;
+        _chequeBranco = false;
+        _chequePreto = false;
 
         var pecaMovida = pecas[x, z];
         pecaMovida.GetMovimentos().ForEach(movimento => {
             var peca = pecas[movimento.X, movimento.Z];
-            if (peca && peca.IsRei() && peca.isBranca != _vezBranco) ChequeMate();
+            if (peca && peca.IsRei() && peca.isBranca != _vezBranco) Cheque();
         });
     }
 
     /**
      * Verifica se a peça informada tem movimentos,
-     * se estiver em cheque-mate só permite mover se a peça for rei,
+     * se estiver em cheque só permite mover se a peça for rei,
      * caso seja rei e não possua movimentos válidos -> GameOver
      */
     private bool PermiteMoverPeca(Peca peca) {
-        if (_chequeMateBranco && peca.isBranca) {
+        if (_chequeBranco && peca.isBranca) {
             if (peca.IsRei()) {
                 if (peca.GetMovimentos().Count > 0) return true;
                 _gameManager.GameOver(!_vezBranco);
@@ -240,7 +240,7 @@ public class Tabuleiro : MonoBehaviour {
             return false;
         }
 
-        if (_chequeMatePreto && !peca.isBranca) {
+        if (_chequePreto && !peca.isBranca) {
             if (peca.IsRei()) {
                 if (peca.GetMovimentos().Count > 0) return true;
                 _gameManager.GameOver(!_vezBranco);
@@ -309,15 +309,15 @@ public class Tabuleiro : MonoBehaviour {
     }
 
     /**
-     * Método que marca como ChequeMate
+     * Método que marca como Cheque
      */
-    private void ChequeMate() {
+    private void Cheque() {
         if (_vezBranco)
-            _chequeMatePreto = true;
+            _chequePreto = true;
         else
-            _chequeMateBranco = true;
+            _chequeBranco = true;
 
-        textChequeMate.text = $"Jogador em cheque-mate!";
+        textChequeMate.text = $"Jogador em cheque!";
     }
 
     /**

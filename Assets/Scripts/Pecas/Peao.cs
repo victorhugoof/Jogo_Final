@@ -22,10 +22,10 @@ public class Peao : Peca {
         var lista = new List<Movimento>();
         if (!GetPecaJogador(x, z + 1) && !GetPecaAdversario(x, z + 1)) { // 1 casa a frente
             lista.Add(new Movimento(x, z + 1));
-        }
         
-        if (!isMovimentou && !GetPecaJogador(x, z + 2) && !GetPecaAdversario(x, z + 2)) { // 2 casas a frente caso nao movimentou ainda
-            lista.Add(new Movimento(x, z + 2));
+            if (!isMovimentou && !GetPecaJogador(x, z + 2) && !GetPecaAdversario(x, z + 2)) { // 2 casas a frente caso nao movimentou ainda
+                lista.Add(new Movimento(x, z + 2));
+            }
         }
 
         var pecaDiagonalCimaDireita = GetPecaAdversario(x + 1, z + 1);
@@ -43,10 +43,10 @@ public class Peao : Peca {
         var lista = new List<Movimento>();
         if (!GetPecaJogador(x, z - 1) && !GetPecaAdversario(x, z - 1)) { // 1 casa a frente
             lista.Add(new Movimento(x, z - 1));
-        }
         
-        if (!isMovimentou && !GetPecaJogador(x, z - 2) && !GetPecaAdversario(x, z - 2)) { // 2 casas a frente caso nao movimentou ainda
-            lista.Add(new Movimento(x, z - 2));
+            if (!isMovimentou && !GetPecaJogador(x, z - 2) && !GetPecaAdversario(x, z - 2)) { // 2 casas a frente caso nao movimentou ainda
+                lista.Add(new Movimento(x, z - 2));
+            }
         }
 
         var pecaDiagonalCimaDireita = GetPecaAdversario(x + 1, z - 1);

@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c29fc4d-b5e5-4e39-8bd0-5112da2bc28b" name="Default Changelist" comment="" />
+    <list default="true" id="0c29fc4d-b5e5-4e39-8bd0-5112da2bc28b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,13 +85,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pergunta.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Question.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Peca.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" />
       </list>
     </option>
   </component>
@@ -143,7 +149,8 @@
     <MESSAGE value="Comentários" />
     <MESSAGE value="Correção Rei" />
     <MESSAGE value="Evoluido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Evoluido" />
+    <MESSAGE value="GDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="GDD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="268" width="935" height="511" key="#xdebugger.evaluate" timestamp="1593713922533">
@@ -234,18 +241,18 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="200" y="164" width="1720" height="848" key="VCS.FileHistoryDialog/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593737751510" />
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593796127704">
+    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593796685295">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593796127704" />
+    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593796685295" />
     <state x="1920" y="0" width="1371" height="1004" maximized="true" key="dock-window-1" timestamp="1593732151103">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="0" width="1371" height="1004" maximized="true" key="dock-window-1/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593732151103" />
-    <state x="595" y="89" width="729" height="870" key="find.popup" timestamp="1593779779920">
+    <state x="595" y="89" width="911" height="870" key="find.popup" timestamp="1593800361821">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="595" y="89" width="729" height="870" key="find.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593779779920" />
+    <state x="595" y="89" width="911" height="870" key="find.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593800361821" />
     <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1593781921770">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
