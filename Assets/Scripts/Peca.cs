@@ -2,68 +2,105 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/**
+ * Script principal de uma peca, deve ser implementado
+ * o método GetMovimentosPossiveis
+ */
 public abstract class Peca : MonoBehaviour {
     private Tabuleiro _tabuleiro;
     public bool isBranca;
     public bool isMovimentou;
     public MeshRenderer meshRenderer;
 
+    /**
+     * Inicia o script com o tabuleiro e o meshRenderer da peça (para marcá-la)
+     */
     private void Start() {
         _tabuleiro = FindObjectOfType<Tabuleiro>();
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
+    /**
+     * Retorna os movimentos que podem ser feitos, valida os movimentos possíveis
+     * removendo movimentos onde a nova posição já possui uma peça do jogador
+     */
     public List<Movimento> GetMovimentos() {
         var lista = GetMovimentosPossiveis();
         var pecas = _tabuleiro.pecas;
 
-        return lista.Where(movimento => PermiteMover(movimento, pecas)).ToList();
+        return lista.Where(movimento => {
+            var x = movimento.X;
+            var z = movimento.Z;
+
+            return Utils.IsValidPosition(x, z) && !GetPecaJogador(x, z);
+        }).ToList();
     }
 
+    /**
+     * Retorna se a peça é um Rei
+     */
     public bool IsRei() {
         return GetType() == typeof(Rei);
     }
 
+    /**
+     * Retorna se a peça é um Peão
+     */
     public bool IsPeao() {
         return GetType() == typeof(Peao);
     }
 
+    /**
+     * Deve retornar todos os movimentos que a peça pode dar
+     */
     protected abstract IEnumerable<Movimento> GetMovimentosPossiveis();
 
-    private bool PermiteMover(Movimento movimento, Peca[,] pecas) {
-        var x = movimento.X;
-        var z = movimento.Z;
-
-        if (!Utils.IsValidPosition(x, z)) return false;
-
-        var peca = pecas[x, z];
-        if (peca) return isBranca != peca.isBranca;
-
-        return true;
-    }
-
+    /**
+     * Busca uma peca do jogador na posição informada, se
+     * não encontrada retorna null
+     */
     protected Peca GetPecaJogador(int x, int z) {
         return GetPecaJogador(x, z, this);
     }
 
-    protected Peca GetPecaAdversario(int x, int z) {
-        return GetPecaAdversario(x, z, this);
-    }
-
-    protected static Peca GetPecaAdversario(int x, int z, Peca escopo) {
-        var peca = !Utils.IsValidPosition(x, z) ? null : escopo._tabuleiro.pecas[x, z];
-        return peca && peca.isBranca != escopo.isBranca ? peca : null;
-    }
-
+    /**
+     * Busca uma peca do jogador na posição informada, se
+     * não encontrada retorna null
+     * método statico
+     */
     protected static Peca GetPecaJogador(int x, int z, Peca escopo) {
         var peca = !Utils.IsValidPosition(x, z) ? null : escopo._tabuleiro.pecas[x, z];
         return peca && peca.isBranca == escopo.isBranca ? peca : null;
     }
 
+    /**
+     * Busca uma peca do adversário na posição informada, se
+     * não encontrada retorna null
+     */
+    protected Peca GetPecaAdversario(int x, int z) {
+        return GetPecaAdversario(x, z, this);
+    }
+
+    /**
+     * Busca uma peca do adversário na posição informada, se
+     * não encontrada retorna null
+     * método statico
+     */
+    protected static Peca GetPecaAdversario(int x, int z, Peca escopo) {
+        var peca = !Utils.IsValidPosition(x, z) ? null : escopo._tabuleiro.pecas[x, z];
+        return peca && peca.isBranca != escopo.isBranca ? peca : null;
+    }
+
+    /**
+     * Retorna a posição X atual
+     */
     public int GetX() {
         return (int) transform.position.x;
     }
 
+    /**
+     * Retorna a posição Z atual
+     */
     public int GetZ() {
         return (int) transform.position.z;
     }

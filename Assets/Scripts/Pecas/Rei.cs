@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
 
+/**
+ * Script de peça tipo Rei
+ */
 public class Rei : Peca {
     private readonly int[][] _posicoes = {
         new[] {-1, -1}, new[] {-1, 0}, new[] {-1, 1}, // Esquerda
@@ -7,6 +10,10 @@ public class Rei : Peca {
         new[] {1, -1}, new[] {1, 0}, new[] {1, 1} // Direita
     };
 
+    /**
+     * Retorna todos os movimentos do Rei
+     *     Todas as casas à sua volta
+     */
     protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
         var x = GetX();
         var z = GetZ();
@@ -22,6 +29,9 @@ public class Rei : Peca {
         return lista;
     }
 
+    /**
+     * Retorna se a movimento que o Rei não irá colocá-lo em cheque
+     */
     private bool IsSemPecasAdversariasVizinhas(int x, int z) {
         foreach (var posicao in _posicoes) {
             var posicaoX = posicao[0];

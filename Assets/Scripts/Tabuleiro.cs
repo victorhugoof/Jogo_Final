@@ -1,6 +1,9 @@
 ﻿using System.Linq;
 using UnityEngine;
 
+/**
+ * Script responsável pelo jogo (tabuleiro)
+ */
 public class Tabuleiro : MonoBehaviour {
     private static readonly Quaternion RotacaoBranco = Quaternion.Euler(0, -90, 0);
     private static readonly Quaternion RotacaoPreto = Quaternion.Euler(0, 90, 0);
@@ -27,6 +30,10 @@ public class Tabuleiro : MonoBehaviour {
     public GameObject torrePreto;
     public float tamanhoCasa;
 
+    /**
+     * Inicia o marcador e a camera (para buscar o ponto clicado em tela)
+     * Cria as peças no tabuleiro
+     */
     public void Start() {
         _marcador = gameObject.GetComponent<Marcador>();
         _camera = Camera.main;
@@ -34,14 +41,17 @@ public class Tabuleiro : MonoBehaviour {
         CriarPecas();
     }
 
+    /**
+     * Busca a posição do mouse e marca a peça se existir
+     * Se tiver clicado seleciona ou move a peça
+     */
     public void Update() {
         var pontos = GetSelecaoMouse();
         var x = pontos[0];
         var z = pontos[1];
 
+        if (!_pecaSelecionada) _marcador.DesmarcarPecas();
         if (!Utils.IsValidPosition(x, z)) {
-            if (!_pecaSelecionada) _marcador.DesmarcarPecas();
-
             return;
         }
 
@@ -55,6 +65,9 @@ public class Tabuleiro : MonoBehaviour {
         }
     }
 
+    /**
+     * Retorna a posição do mouse em relação ao tabuleiro
+     */
     private int[] GetSelecaoMouse() {
         var x = -1;
         var z = -1;
@@ -68,6 +81,10 @@ public class Tabuleiro : MonoBehaviour {
         return new[] {x, z};
     }
 
+    /**
+     * Busca e seleciona uma peca na posicao informada,
+     * somente seleciona se a peça for da equipe do jogador e se tiver movimentos
+     */
     private void SelecionarPeca(int x, int y) {
         _pecaSelecionada = pecas[x, y];
 
@@ -81,6 +98,9 @@ public class Tabuleiro : MonoBehaviour {
         _marcador.MarcarPeca(_pecaSelecionada);
     }
 
+    /**
+     * Move a peça selecionada para a posição informada se existir movimento
+     */
     private void MoverPeca(int x, int z) {
         var movimento = _pecaSelecionada.GetMovimentos().FirstOrDefault(mv => mv.X == x && mv.Z == z);
         if (movimento != null) {
@@ -103,17 +123,22 @@ public class Tabuleiro : MonoBehaviour {
         _marcador.DesmarcarPecas();
     }
 
+    /**
+     * Marca peça na posição informada se existir peça e se possuir movimentos
+     */
     private void MarcarPeca(int x, int y) {
         var peca = pecas[x, y];
 
         if (!peca || peca.isBranca != _vezBranco || !PermiteMoverPeca(peca)) {
-            _marcador.DesmarcarPecas();
             return;
         }
 
         _marcador.MarcarPeca(peca);
     }
 
+    /**
+     * Troca o time do jogador e valida se entrou em cheque ou GameOver
+     */
     private void TrocarJogador() {
         _vezBranco = !_vezBranco;
         foreach (var peca in pecas)
@@ -121,6 +146,9 @@ public class Tabuleiro : MonoBehaviour {
                 PermiteMoverPeca(peca); // Verifica GameOver
     }
 
+    /**
+     * Processa cheque-mate, verifica se o rei ficou na mira de alguma peça inimiga
+     */
     private void ProcessaChequeMate(int x, int z) {
         _chequeMateBranco = false;
         _chequeMatePreto = false;
@@ -132,6 +160,11 @@ public class Tabuleiro : MonoBehaviour {
         });
     }
 
+    /**
+     * Verifica se a peça informada tem movimentos,
+     * se estiver em cheque-mate só permite mover se a peça for rei,
+     * caso seja rei e não possua movimentos válidos -> GameOver
+     */
     private bool PermiteMoverPeca(Peca peca) {
         if (_chequeMateBranco && peca.isBranca) {
             if (peca.IsRei()) {
@@ -158,6 +191,9 @@ public class Tabuleiro : MonoBehaviour {
         return peca.GetMovimentos().Count > 0;
     }
 
+    /**
+     * Cria as peças no tabuleiro
+     */
     private void CriarPecas() {
         pecas = new Peca[8, 8];
 
@@ -190,6 +226,9 @@ public class Tabuleiro : MonoBehaviour {
         for (var i = 0; i < 8; i++) CriaPeca(i, 6, peaoPreto, RotacaoPreto);
     }
 
+    /**
+     * Cria uma peça na posição informada
+     */
     private void CriaPeca(int x, int z, GameObject peca, Quaternion rotacao) {
         var instantiate = Instantiate(peca, GetPosicao(x, z), rotacao);
         instantiate.transform.SetParent(transform);
@@ -197,6 +236,9 @@ public class Tabuleiro : MonoBehaviour {
         pecas[x, z] = instantiate.GetComponent<Peca>();
     }
 
+    /**
+     * Retorna Vector3 para uma posição informada
+     */
     private Vector3 GetPosicao(int x, int z) {
         var posicao = Vector3.zero;
         posicao.x += tamanhoCasa * x;
@@ -204,6 +246,9 @@ public class Tabuleiro : MonoBehaviour {
         return posicao;
     }
 
+    /**
+     * Método que marca como ChequeMate
+     */
     private void ChequeMate() {
         if (_vezBranco)
             _chequeMatePreto = true;
@@ -213,6 +258,9 @@ public class Tabuleiro : MonoBehaviour {
         Debug.Log("Cheque-mate " + (_vezBranco ? "Preto" : "Branco"));
     }
 
+    /**
+     * Método que marca como GameOver
+     */
     private void GameOver() {
         Debug.Log("GameOver! Ganhador: " + (_vezBranco ? "Preto" : "Branco"));
     }

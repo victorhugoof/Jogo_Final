@@ -1,6 +1,15 @@
 ﻿using System.Collections.Generic;
 
+/**
+ * Script de peça tipo Rainha
+ */
 public class Rainha : Peca {
+    
+    /**
+     * Retorna todos os movimentos da Rainha
+     *     Todos os movimentos do Bispo
+     *     Todos os movimentos da Torre
+     */
     protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
         var x = GetX();
         var z = GetZ();

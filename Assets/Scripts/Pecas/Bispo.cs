@@ -1,6 +1,13 @@
 ﻿using System.Collections.Generic;
 
+/**
+ * Script de peça tipo Bispo
+ */
 public class Bispo : Peca {
+    /**
+     * Retorna todos os movimentos do Bispo
+     *     Todas as casas em diagonal à sua volta
+     */
     protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
         return GetMovimentos(GetX(), GetZ(), this);
     }

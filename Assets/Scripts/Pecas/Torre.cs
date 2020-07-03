@@ -1,6 +1,17 @@
 ﻿using System.Collections.Generic;
 
+/**
+ * Script de peça tipo Torre
+ */
 public class Torre : Peca {
+
+    /**
+     * Retorna todos os movimentos da Torre
+     *     Todas as casas à direita
+     *     Todas as casas à esquerda
+     *     Todas as casas à baixo
+     *     Todas as casas à cima
+     */
     protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
         return GetMovimentos(GetX(), GetZ(), this);
     }

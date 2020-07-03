@@ -22,13 +22,16 @@
     <list default="true" id="0c29fc4d-b5e5-4e39-8bd0-5112da2bc28b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Marcador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Marcador.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movimento.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movimento.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Peca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Peca.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,17 +79,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BoardHighlights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MarcadorTabuleiro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TabuleiroXadrez.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movimento.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Marcador.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Peca.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Torre.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Peao.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rainha.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tabuleiro.cs" />
       </list>
     </option>
   </component>
@@ -133,13 +136,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Commit" />
     <MESSAGE value="Apagado build antigo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apagado build antigo" />
+    <MESSAGE value="Implementado gameover" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementado gameover" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="268" width="935" height="511" key="#xdebugger.evaluate" timestamp="1593713922533">
@@ -230,21 +235,21 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="200" y="164" width="1720" height="848" key="VCS.FileHistoryDialog/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593737751510" />
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593732322867">
+    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593737867617">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593732322867" />
+    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593737867617" />
     <state x="1920" y="0" width="1371" height="1004" maximized="true" key="dock-window-1" timestamp="1593732151103">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="0" width="1371" height="1004" maximized="true" key="dock-window-1/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593732151103" />
-    <state x="595" y="89" width="729" height="870" key="find.popup" timestamp="1593736846925">
+    <state x="595" y="89" width="729" height="870" key="find.popup" timestamp="1593779779920">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="595" y="89" width="729" height="870" key="find.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593736846925" />
-    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1593731335722">
+    <state x="595" y="89" width="729" height="870" key="find.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593779779920" />
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1593779472548">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593731335722" />
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593779472548" />
   </component>
 </project>

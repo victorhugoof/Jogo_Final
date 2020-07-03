@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Script responsável por marcar as peças e suas possíveis posições
+ */
 public class Marcador : MonoBehaviour {
     private readonly List<GameObject> _marcadores = new List<GameObject>();
     private readonly Dictionary<Peca, Material> _materials = new Dictionary<Peca, Material>();

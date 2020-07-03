@@ -1,6 +1,15 @@
 ﻿using System.Collections.Generic;
 
+/**
+ * Script de peça tipo Peão
+ */
 public class Peao : Peca {
+    /**
+     * Retorna todos os movimentos do Peão
+     *     1 casa à frente
+     *     2 casas à frente (se primeira movimentação)
+     *     1 casa à diagonal a sua volta caso possua uma peça inimiga na posição (comer peça)
+     */
     protected override IEnumerable<Movimento> GetMovimentosPossiveis() {
         var x = GetX();
         var z = GetZ();
