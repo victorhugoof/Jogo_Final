@@ -2,12 +2,11 @@
 using UnityEngine;
 
 public class Marcador : MonoBehaviour {
-    public GameObject marcadorTabuleiro;
-    public float espacamentoMarcadorTabuleiro;
-    public Material materialPecaSelecionada;
-
     private readonly List<GameObject> _marcadores = new List<GameObject>();
     private readonly Dictionary<Peca, Material> _materials = new Dictionary<Peca, Material>();
+    public float espacamentoMarcadorTabuleiro;
+    public GameObject marcadorTabuleiro;
+    public Material materialPecaSelecionada;
 
     public void MarcarPeca(Peca peca) {
         DesmarcarPecas();

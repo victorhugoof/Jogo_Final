@@ -7,7 +7,7 @@ public class Bispo : Peca {
 
     public static IEnumerable<Movimento> GetMovimentos(int X, int Z, Peca peca) {
         var lista = new List<Movimento>();
-        
+
         var x = X;
         var z = Z;
         while (true) { // Diagonal direita cima

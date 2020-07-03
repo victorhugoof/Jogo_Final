@@ -13,7 +13,7 @@ public class Cavalo : Peca {
             new Movimento(x - 2, z - 1),
             new Movimento(x + 2, z - 1),
             new Movimento(x - 2, z + 1),
-            new Movimento(x + 2, z + 1),
+            new Movimento(x + 2, z + 1)
         };
     }
 }
