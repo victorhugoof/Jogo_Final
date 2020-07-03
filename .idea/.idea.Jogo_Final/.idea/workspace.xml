@@ -20,144 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c29fc4d-b5e5-4e39-8bd0-5112da2bc28b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Docs/Imagens/bispo.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/Imagens/cavalo.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/Imagens/jogo.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/Imagens/peao.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/Imagens/peca_selecionada.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/Imagens/rainha.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/Imagens/rei.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/Imagens/torre.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jogo_Final/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GPVFX_3D Chess Set/3D/Materials/Outline.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PerguntaManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/Assembly-CSharp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/Mono.Security.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.ComponentModel.Composition.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Configuration.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Data.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Diagnostics.StackTrace.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Drawing.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.EnterpriseServices.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Globalization.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.IO.Compression.FileSystem.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.IO.Compression.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Net.Http.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Numerics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Runtime.Serialization.Xml.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Runtime.Serialization.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.ServiceModel.Internals.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Transactions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Xml.Linq.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Xml.XPath.XDocument.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.Xml.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/System.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/Unity.Timeline.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.AIModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.ARModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.AccessibilityModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.AndroidJNIModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.AnimationModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.AssetBundleModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.AudioModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.ClothModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.ClusterInputModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.ClusterRendererModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.CoreModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.CrashReportingModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.DSPGraphModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.DirectorModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.GameCenterModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.GridModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.HotReloadModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.IMGUIModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.ImageConversionModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.InputLegacyModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.InputModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.JSONSerializeModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.LocalizationModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.ParticleSystemModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.PerformanceReportingModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.Physics2DModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.PhysicsModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.ProfilerModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.ScreenCaptureModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.SharedInternalsModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.SpriteMaskModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.SpriteShapeModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.StreamingModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.SubstanceModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.SubsystemsModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.TLSModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.TerrainModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.TextCoreModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.TextRenderingModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.TilemapModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UIElementsModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UIModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UNETModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UmbraModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UnityConnectModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UnityWebRequestModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.VFXModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.VRModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.VehiclesModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.VideoModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.WindModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.XRModule.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/UnityEngine.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/mscorlib.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Managed/netstandard.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Resources/unity default resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/Resources/unity_builtin_extra" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/app.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/boot.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/globalgamemanagers" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/globalgamemanagers.assets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/level0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/resources.assets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/resources.assets.resS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/sharedassets0.assets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/sharedassets0.assets.resS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/Jogo_Final_Data/sharedassets0.resource" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/2.0/machine.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/2.0/settings.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/2.0/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.0/machine.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.0/settings.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.0/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.5/machine.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.5/settings.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/4.5/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/browscap.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/MonoBleedingEdge/etc/mono/mconfig/config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/UnityCrashHandler64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildWindows/UnityPlayer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDD.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Bispo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Rei.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pecas/Cavalo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movimento.cs" root0="FORCE_HIGHLIGHTING" />
@@ -278,7 +142,8 @@
     <MESSAGE value="Evoluido" />
     <MESSAGE value="GDD" />
     <MESSAGE value="Novas perguntas e build final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Novas perguntas e build final" />
+    <MESSAGE value="Alterações" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterações" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="268" width="935" height="511" key="#xdebugger.evaluate" timestamp="1593713922533">
@@ -371,9 +236,10 @@
     </state>
     <state x="150" y="135" width="1290" height="696" key="VCS.FileHistoryDialog/0.0.1440.860@0.0.1440.860" timestamp="1593805764592" />
     <state x="200" y="164" width="1720" height="848" key="VCS.FileHistoryDialog/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593737751510" />
-    <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593800767518">
-      <screen x="0" y="0" width="1920" height="1048" />
+    <state x="416" y="213" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1593809080743">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
+    <state x="416" y="213" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1593809080743" />
     <state x="555" y="260" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1048/1920.0.1920.1080@0.0.1920.1048" timestamp="1593800767518" />
     <state x="1920" y="0" width="1371" height="1004" maximized="true" key="dock-window-1" timestamp="1593732151103">
       <screen x="1920" y="0" width="1920" height="1080" />
